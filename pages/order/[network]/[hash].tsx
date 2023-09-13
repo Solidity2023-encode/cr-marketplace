@@ -24,6 +24,8 @@ import {
 } from '../../../src/utils/blockchain';
 import { TraderOrderFilter } from '../../../src/utils/types';
 
+export const runtime = 'edge';
+
 const OrderDetail: NextPage = () => {
   const router = useRouter();
   const { hash, network } = router.query;

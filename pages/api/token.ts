@@ -4,6 +4,8 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { ERC20Abi } from '../../src/constants/abis';
 import { getProviderByChainId } from '../../src/utils/blockchain';
 
+export const runtime = 'edge';
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
