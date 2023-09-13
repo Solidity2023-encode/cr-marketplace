@@ -23,7 +23,7 @@ export function AssetPageTitle({ address, id }: Props) {
         <Typography variant="caption" color="textSecondary">
           {asset?.collectionName}
         </Typography>
-        <Typography variant="h5" component="h1">
+        <Typography variant="h5" component="h1" sx={{ color: '#f5c89e' }}>
           {metadata?.name !== '' && metadata?.name !== undefined
             ? metadata?.name
             : `${asset?.collectionName} #${truncateErc1155TokenId(asset?.id)}`}

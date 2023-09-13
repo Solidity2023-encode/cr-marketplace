@@ -69,8 +69,20 @@ export function AssetPageActions({ address, id }: Props) {
       />
       <Grid container spacing={2} alignItems="stretch" alignContent="center">
         <Grid item xs>
-          <Paper variant="outlined" sx={{ p: 1, height: '100%' }}>
-            <Typography variant="caption" color="textSecondary">
+          <Paper
+            variant="outlined"
+            sx={{
+              p: 1,
+              height: '100%',
+
+              // background: 'transparent',
+            }}
+          >
+            <Typography
+              variant="caption"
+              color="textSecondary"
+              sx={{ color: '#272a30' }}
+            >
               <FormattedMessage id="owned.by" defaultMessage="Owned by" />
             </Typography>
             <Link
@@ -87,11 +99,11 @@ export function AssetPageActions({ address, id }: Props) {
                 alignContent="center"
                 spacing={0.5}
               >
-                <div>
+                <div style={{ color: '#272a30' }}>
                   {isAddressEqual(account, asset?.owner) ? (
                     <FormattedMessage id="you" defaultMessage="you" />
                   ) : (
-                    truncateAddress(asset?.owner)
+                    asset?.owner
                   )}
                 </div>
                 <LaunchIcon fontSize="inherit" />

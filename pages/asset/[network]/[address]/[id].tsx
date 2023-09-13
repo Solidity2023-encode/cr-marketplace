@@ -31,7 +31,6 @@ const AssetDetailPage: NextPage = () => {
   const { address, id } = router.query;
 
   const { data: asset } = useAsset(address as string, id as string);
-
   const { data: metadata } = useAssetMetadata(asset);
 
   return (
@@ -90,13 +89,11 @@ export const getStaticProps: GetStaticProps = async ({
 }: GetStaticPropsContext) => {
   if (params !== undefined) {
     const { address, id, network } = params;
-
     const queryClient = new QueryClient();
 
     const provider = getProviderBySlug(network as string);
 
     const asset = await getAssetData(provider, address as string, id as string);
-
     if (asset) {
       await queryClient.prefetchQuery(
         [GET_ASSET_DATA, address as string, id as string],

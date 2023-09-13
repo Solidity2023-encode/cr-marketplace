@@ -20,9 +20,9 @@ export function AssetRightSection({ address, id }: Props) {
           <AssetPageActions address={address} id={id} />
         </NoSsr>
       </Grid>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}>
         <AssetPricePaper address={address} id={id} />
-      </Grid>
+      </Grid> */}
       <Grid item xs={12}>
         <AssetTabs address={address} id={id} />
       </Grid>

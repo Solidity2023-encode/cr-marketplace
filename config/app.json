@@ -1,9 +1,9 @@
 {
-  "name": "Kittygotchi",
+  "name": "Dice",
   "locale": "en-US",
   "currency": "usd",
-  "theme": "kittygotchi",
-  "url": "https://www.kittygotchi.com",
+  "theme": "casino",
+  "url": "",
   "logo": {
     "url": "/assets/images/market-logo.svg",
     "height": "",
@@ -19,41 +19,23 @@
   },
   "fees": [
     {
-      "amount_percentage": 1,
-      "recipient": "0x5bD68B4d6f90Bcc9F3a9456791c0Db5A43df676d"
+      "amount_percentage": 5,
+      "recipient": "0x67f1452b3099CfB27E708130421c98aD2319C0b7"
     }
   ],
   "format": {
-    "date": "MM/DD/YYYY",
-    "datetime": "MM/DD/YYYY HH:mm:ss"
+    "date": "DD/MM/YYYY",
+    "datetime": "DD/MM/YYYY HH:mm:ss"
   },
   "collections": [
     {
-      "image": "/assets/kittygotchi/banner_eth.svg",
-      "name": "Kittygotchi",
-      "backgroundImage": "/assets/kittygotchi/banner_eth.svg",
-      "chainId": 1,
-      "contractAddress": "0xe76591AD590765e9Ab9EdE82BEa274aFcF5Ce703",
+      "image": "/assets/banner.png",
+      "name": "Casino Royale Dice NFT",
+      "backgroundImage": "/assets/banner.png",
+      "chainId": 80001,
+      "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
       "description": "",
-      "uri": "kittygotchieth"
-    },
-    {
-      "image": "/assets/kittygotchi/banner_bsc.svg",
-      "name": "Kittygotchi",
-      "backgroundImage": "/assets/kittygotchi/banner_bsc.svg",
-      "chainId": 56,
-      "contractAddress": "0xf44112926506318e3Aace4381B2D76791D980Ac3",
-      "description": "",
-      "uri": "kittygotchibsc"
-    },
-    {
-      "image": "/assets/kittygotchi/banner_polygon.svg",
-      "name": "Kittygotchi",
-      "backgroundImage": "/assets/kittygotchi/banner_polygon.svg",
-      "chainId": 137,
-      "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-      "description": "",
-      "uri": "kittygotchi"
+      "uri": "dicenft"
     }
   ],
   "tokens": [
@@ -145,26 +127,26 @@
       "sections": [
         {
           "type": "featured",
-          "title": "Kittygotchi Marketplace",
+          "title": "Casino Royale Marketplace",
           "items": [
             {
               "type": "asset",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "tokenId": "42"
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "tokenId": "0"
             },
             {
               "type": "asset",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "tokenId": "50"
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "tokenId": "17"
             },
             {
               "type": "collection",
-              "title": "Kittygotchi",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "backgroundImageUrl": "/assets/kittygotchi/banner.svg"
+              "title": "Dice NFT",
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "backgroundImageUrl": "/assets/banner.png"
             }
           ]
         },
@@ -175,24 +157,24 @@
             {
               "featured": true,
               "type": "collection",
-              "title": "Kittygotchi",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "backgroundImageUrl": "/assets/kittygotchi/banner_polygon.svg"
+              "title": "Dice NFT",
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "backgroundImageUrl": "/assets/banner.png"
             },
             {
               "type": "collection",
-              "title": "Kittygotchi",
-              "chainId": 56,
-              "contractAddress": "0xf44112926506318e3Aace4381B2D76791D980Ac3",
-              "backgroundImageUrl": "/assets/kittygotchi/banner_bsc.svg"
+              "title": "Dice NFT",
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "backgroundImageUrl": "/assets/banner.png"
             },
             {
               "type": "collection",
-              "title": "Kittygotchi",
-              "chainId": 1,
-              "contractAddress": "0xe76591AD590765e9Ab9EdE82BEa274aFcF5Ce703",
-              "backgroundImageUrl": "/assets/kittygotchi/banner_eth.svg"
+              "title": "Dice NFT",
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "backgroundImageUrl": "/assets/banner.png"
             }
           ]
         },
@@ -205,8 +187,8 @@
         {
           "variant": "dark",
           "type": "call-to-action",
-          "title": "Kittygotchi",
-          "subtitle": "See your kitties on ETH, BSC and Polygon networks",
+          "title": "Dice NFT",
+          "subtitle": "Exclusively available on Polygon Mumbai",
           "button": {
             "title": "See all",
             "url": "/collections"
@@ -214,15 +196,15 @@
           "items": [
             {
               "type": "asset",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "tokenId": "42"
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "tokenId": "15"
             },
             {
               "type": "asset",
-              "chainId": 137,
-              "contractAddress": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
-              "tokenId": "50"
+              "chainId": 80001,
+              "contractAddress": "0xa9a591ddE49f1C0D9b668F64a04baf85d2D075b2",
+              "tokenId": "23"
             }
           ]
         }
@@ -231,8 +213,8 @@
   },
   "seo": {
     "home": {
-      "title": "Kittygotchi",
-      "description": "Kittygochi collection: create cute Kitty, make it unique, feed him to earn attack, speed, and defense, he will be here for you. Your Kitty gives you special powers on DexKit Dashboard"
+      "title": "Casino Royale Marketplace",
+      "description": "Marketplace for Casino Royale"
     }
   }
 }

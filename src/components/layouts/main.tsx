@@ -92,6 +92,7 @@ const MainLayout: React.FC<Props> = ({ children, noSsr, disablePadding }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       connector.activate();
+
       const handleNetworkChange = (newNetwork: any, oldNetwork: any) => {
         // When a Provider makes its initial connection, it emits a "network"
         // event with a null oldNetwork along with the newNetwork. So, if the
@@ -179,7 +180,7 @@ const MainLayout: React.FC<Props> = ({ children, noSsr, disablePadding }) => {
       <Box sx={{ minHeight: '100vh' }} py={disablePadding ? 0 : 4}>
         {children}
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 

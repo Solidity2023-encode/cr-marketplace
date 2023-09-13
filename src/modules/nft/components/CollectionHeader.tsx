@@ -52,14 +52,14 @@ export function CollectionHeader(props: Props) {
                   sx={(theme) => ({
                     position: 'relative',
                     height: theme.spacing(14),
-                    width: theme.spacing(14),
-                    borderRadius: '50%',
+                    width: theme.spacing(24),
+                    borderRadius: '10%',
                   })}
                 >
                   <Img
                     src={collectionImage}
                     layout="fill"
-                    sx={{ borderRadius: '50%' }}
+                    sx={{ borderRadius: '10%' }}
                     alt={collection?.collectionName || ''}
                   />
                 </Box>
@@ -80,6 +80,7 @@ export function CollectionHeader(props: Props) {
                 textOverflow: 'ellipsis',
                 overflow: 'hidden',
                 textAlign: { xs: 'center', sm: 'left' },
+                color: '#f5c89e',
               }}
               variant="h5"
               component="h1"

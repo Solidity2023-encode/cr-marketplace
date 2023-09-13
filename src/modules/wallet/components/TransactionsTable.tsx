@@ -103,9 +103,9 @@ export function TransactionsTable({
     if (filteredNotificationsKeys.length === 0) {
       return (
         <TableRow>
-          <TableCell colSpan={5}>
+          <TableCell colSpan={5} sx={{ color: '#f5c89e' }}>
             <Stack sx={{ py: 2 }} alignItems="center" justifyContent="center">
-              <Typography variant="body1" color="textSecondary">
+              <Typography variant="body1">
                 <FormattedMessage
                   id="nothing.to.see.here"
                   defaultMessage="Nothing to see here"
@@ -125,13 +125,13 @@ export function TransactionsTable({
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell colSpan={2}>
+            <TableCell colSpan={2} sx={{ color: '#c9864f' }}>
               <FormattedMessage id="transaction" defaultMessage="Transaction" />
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ color: '#c9864f' }}>
               <FormattedMessage id="date" defaultMessage="Date" />
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ color: '#c9864f' }}>
               <FormattedMessage id="status" defaultMessage="Status" />
             </TableCell>
             <TableCell></TableCell>

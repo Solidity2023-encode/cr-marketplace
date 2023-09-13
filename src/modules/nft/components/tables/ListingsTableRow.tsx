@@ -91,7 +91,7 @@ export function ListingsTableRow({
 
   return (
     <TableRow>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         <Stack
           direction="row"
           alignItems="center"
@@ -113,7 +113,7 @@ export function ListingsTableRow({
           </Typography>
         </Stack>
       </TableCell>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         {totalInCurrency ? (
           <>
             <FormattedNumber value={totalInCurrency} currency={currency} />{' '}
@@ -123,10 +123,10 @@ export function ListingsTableRow({
           <Skeleton />
         )}
       </TableCell>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         <MomentFromNow from={moment.unix(parseInt(order.expiry))} />
       </TableCell>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         <Link
           color="primary"
           href={
@@ -196,6 +196,7 @@ export function ListingsTableRow({
             elRef.current = ref;
           }}
           onClick={() => onMenu!(elRef.current, order)}
+          sx={{ color: '#f5c89e' }}
         >
           <MoreVertIcon />
         </IconButton>

@@ -1,7 +1,7 @@
 import {
   NftSwapV4,
   SwappableAssetV4,
-  SwappableNftV4
+  SwappableNftV4,
 } from '@traderxyz/nft-swap-sdk';
 import { useCallback, useMemo } from 'react';
 import {
@@ -9,7 +9,7 @@ import {
   UseMutationOptions,
   useQuery,
   useQueryClient,
-  UseQueryOptions
+  UseQueryOptions,
 } from 'react-query';
 
 import { BigNumber, ethers } from 'ethers';
@@ -22,7 +22,7 @@ import {
   getAssetMetadata,
   getAssetsData,
   getAssetsFromOrderbook,
-  getCollectionData
+  getCollectionData,
 } from '../services/nft';
 
 import { ChainId, NFTType } from '../constants/enum';
@@ -30,7 +30,7 @@ import {
   Asset,
   AssetMetadata,
   OrderBookItem,
-  SwapApiOrder
+  SwapApiOrder,
 } from '../types/nft';
 
 import { PostOrderResponsePayload } from '@traderxyz/nft-swap-sdk/dist/sdk/v4/orderbook';
@@ -262,7 +262,6 @@ export function useMakeOfferMutation(
           appConfig.fees
         );
       }
-
 
       const order = nftSwapSdk.buildOrder(
         another,
@@ -571,7 +570,7 @@ export function useFavoriteAssets() {
         asset !== undefined &&
         assets !== undefined &&
         assets[
-        `${asset.chainId}-${asset.contractAddress.toLowerCase()}-${asset.id}`
+          `${asset.chainId}-${asset.contractAddress.toLowerCase()}-${asset.id}`
         ] !== undefined
       );
     },

@@ -49,7 +49,6 @@ const CollectionPage: NextPage = () => {
   const { address, network } = router.query;
   const chainId = getChainIdFromName(network as string)?.chainId;
   const [search, setSearch] = useState<string>();
-
   const { data: collection } = useCollection(address as string, chainId);
 
   const handleChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -109,15 +108,15 @@ const CollectionPage: NextPage = () => {
   return (
     <>
       <NextSeo title={collection?.collectionName} />
-      {renderDrawer()}
+      {/* {renderDrawer()} */}
       <NextSeo title={`${collection?.collectionName}`} />
-      <MainLayout disablePadding>
-        <Grid container>
-          {isDesktop && (
+      <MainLayout>
+        <Grid container justifyContent={'center'}>
+          {/* {isDesktop && (
             <Grid item xs={12} sm={2}>
               {renderSidebar()}
             </Grid>
-          )}
+          )} */}
           <Grid item xs={12} sm={10}>
             <Box p={2}>
               <Grid container spacing={2}>
@@ -145,7 +144,13 @@ const CollectionPage: NextPage = () => {
                         alignItems="center"
                         alignContent="center"
                       >
-                        <Typography variant="body1" sx={{ fontWeight: 600 }}>
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontWeight: 600,
+                            color: theme.palette.primary.light,
+                          }}
+                        >
                           <FormattedMessage
                             id="collection"
                             defaultMessage="Collection"

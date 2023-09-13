@@ -50,7 +50,13 @@ export function AssetCard({
   }, [metadata, asset]);
 
   return (
-    <Card sx={{ position: 'relative', heigh: '100%' }}>
+    <Card
+      sx={{ position: 'relative', heigh: '100%' }}
+      style={{
+        background:
+          '-webkit-linear-gradient(25deg, hsl(27, 53%, 55%) 0%, hsl(29, 81%, 79%) 100%)',
+      }}
+    >
       <CardActionArea
         LinkComponent={Link}
         href={`/asset/${getNetworkSlugFromChainId(asset?.chainId)}/${

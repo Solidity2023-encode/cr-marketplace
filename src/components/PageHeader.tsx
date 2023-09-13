@@ -73,7 +73,7 @@ export function PageHeader({ breadcrumbs }: Props) {
             <CustomLink
               key={index}
               href={breadcrumb.uri}
-              color={breadcrumb?.active ? 'primary' : 'text.primary'}
+              color={breadcrumb?.active ? 'primary' : 'text.secondary'}
             >
               {breadcrumb.caption}
             </CustomLink>

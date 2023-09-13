@@ -36,25 +36,34 @@ export default createTheme({
 
   palette: {
     background: {
-      default: '#FFFFFF',
-      paper: '#FAFAFA',
+      default: '#1a1b1f',
+      paper: '#f5c89e',
     },
-    divider: '#DCDCDC',
+    divider: '#f5c89e',
     text: {
-      primary: '#0E1116',
-      secondary: '#737372',
+      primary: '#272a30',
+      secondary: '#c9864f',
       disabled: '#9B9B9B',
     },
     primary: {
-      light: '#8390FA',
-      main: '#3B51F7',
-      dark: '#081EC4',
+      light: '#f5c89e',
+      main: '#f5c89e',
+      dark: '#272a30',
     },
     secondary: {
+      light: '#FCDB88',
       main: '#FAC748',
+      dark: '#C79005',
     },
     error: {
       main: '#FF1053',
+      light: '#FFADC5',
+      dark: '#B80037',
+    },
+    info: {
+      light: '#B4C1F8',
+      main: '#4361EE',
+      dark: '#102CA8',
     },
     success: {
       main: '#36AB47',

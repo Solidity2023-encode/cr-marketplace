@@ -86,7 +86,7 @@ function SwitchNetworkDialog({ dialogProps }: Props) {
           )}
           <List disablePadding>
             {Object.keys(NETWORKS)
-              .filter((k) => !NETWORKS[parseInt(k)].testnet)
+              // .filter((k) => !NETWORKS[parseInt(k)].testnet)
               .map((key: any, index: number) => (
                 <ListItemButton
                   disabled={switchNetworkMutation.isLoading}

@@ -41,7 +41,7 @@ function WalletTableRow({
   );
   return (
     <TableRow>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         <Stack
           direction="row"
           alignItems="center"
@@ -65,8 +65,10 @@ function WalletTableRow({
           </Box>
         </Stack>
       </TableCell>
-      <TableCell>{isBalancesVisible ? totalInCurrency : '*****'}</TableCell>
-      <TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
+        {isBalancesVisible ? totalInCurrency : '*****'}
+      </TableCell>
+      <TableCell sx={{ color: '#f5c89e' }}>
         {isBalancesVisible ? (
           <>
             {<FormattedNumber value={Number(balanceUnits)} />} {token.symbol}

@@ -19,7 +19,7 @@ export function AssetList({ contractAddress, search }: Props) {
   const filteredAssets = useMemo(() => {
     return assets;
   }, [search]);
-
+  console.log(assets);
   return (
     <Grid container spacing={2}>
       {filteredAssets?.map((asset, index) => (

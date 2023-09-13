@@ -213,12 +213,15 @@ const Wallet: NextPage = () => {
                         alignContent="center"
                         spacing={1}
                       >
-                        <Typography variant="h5">
+                        <Typography variant="h5" sx={{ color: '#f5c89e' }}>
                           <NoSsr>
                             <WalletTotalBalanceCointainer />
                           </NoSsr>
                         </Typography>
-                        <IconButton onClick={handleToggleVisibility}>
+                        <IconButton
+                          onClick={handleToggleVisibility}
+                          sx={{ color: '#f5c89e' }}
+                        >
                           {isBalancesVisible ? (
                             <VisibilityIcon />
                           ) : (
@@ -309,7 +312,8 @@ const Wallet: NextPage = () => {
                     onClick={handleToggleBalances}
                     fullWidth
                     sx={(theme) => ({
-                      backgroundColor: theme.palette.background.paper,
+                      // backgroundColor: theme.palette.background.paper,
+                      background: '#f5c89e0a',
                       py: 2,
                     })}
                     startIcon={
@@ -330,6 +334,7 @@ const Wallet: NextPage = () => {
                       <WalletActionButton
                         LinkComponent={Link}
                         href="/wallet/nfts"
+                        sx={{ background: '#f5c89e24' }}
                       >
                         <Stack
                           direction="row"
@@ -337,7 +342,7 @@ const Wallet: NextPage = () => {
                           alignItems="center"
                           alignContent="center"
                         >
-                          <Typography variant="h5">
+                          <Typography variant="h5" sx={{ color: '#f5c89e' }}>
                             <FormattedMessage id="nfts" defaultMessage="NFTs" />
                           </Typography>
                           {Object.keys(favorites.assets).length > 0 && (
@@ -372,6 +377,7 @@ const Wallet: NextPage = () => {
                       <WalletActionButton
                         LinkComponent={Link}
                         href="/wallet/orders"
+                        sx={{ background: '#f5c89e24' }}
                       >
                         <Stack
                           direction="row"
@@ -379,7 +385,7 @@ const Wallet: NextPage = () => {
                           alignItems="center"
                           alignContent="center"
                         >
-                          <Typography variant="h5">
+                          <Typography variant="h5" sx={{ color: '#f5c89e' }}>
                             <FormattedMessage
                               id="orders"
                               defaultMessage="Orders"

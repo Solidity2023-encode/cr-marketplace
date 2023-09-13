@@ -47,13 +47,13 @@ function WalletBalancesTable({ isBalancesVisible }: Props) {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>
+            <TableCell sx={{ color: '#c9864f' }}>
               <FormattedMessage id="token" defaultMessage="Token" />
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ color: '#c9864f' }}>
               <FormattedMessage id="total" defaultMessage="Total" />
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ color: '#c9864f' }}>
               <FormattedMessage id="balance" defaultMessage="Balance" />
             </TableCell>
           </TableRow>

@@ -247,7 +247,15 @@ function Navbar() {
           </ListItem> */}
         </List>
       </Popover>
-      <AppBar variant="elevation" color="default" position="sticky">
+      <AppBar
+        variant="elevation"
+        color="default"
+        position="sticky"
+        style={{
+          background:
+            '-webkit-linear-gradient(25deg, hsl(27, 53%, 55%) 0%, hsl(29, 81%, 79%) 100%)',
+        }}
+      >
         <Toolbar variant="dense" sx={{ py: 1 }}>
           {isMobile && (
             <IconButton

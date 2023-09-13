@@ -206,14 +206,14 @@ export function ListingsTable({
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell component="th">
+                <TableCell component="th" sx={{ color: '#c9864f' }}>
                   <FormattedMessage
                     defaultMessage="Price"
                     id="price"
                     description="Table price"
                   />
                 </TableCell>
-                <TableCell component="th">
+                <TableCell component="th" sx={{ color: '#c9864f' }}>
                   <FormattedMessage
                     id="fiat.price"
                     defaultMessage="{currency} Price"
@@ -221,13 +221,13 @@ export function ListingsTable({
                     values={{ currency: currency.toUpperCase() }}
                   />
                 </TableCell>
-                <TableCell component="th">
+                <TableCell component="th" sx={{ color: '#c9864f' }}>
                   <FormattedMessage
                     id="exporation"
                     defaultMessage="Expiration"
                   />
                 </TableCell>
-                <TableCell component="th" colSpan={3}>
+                <TableCell component="th" colSpan={3} sx={{ color: '#c9864f' }}>
                   <FormattedMessage id="from" defaultMessage="From" />
                 </TableCell>
               </TableRow>

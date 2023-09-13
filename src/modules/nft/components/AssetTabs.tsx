@@ -457,10 +457,10 @@ export function AssetTabs({ address, id }: Props) {
                 <FormattedMessage id="listings" defaultMessage="Listings" />
               }
             />
-            <Tab
+            {/* <Tab
               value={AssetTabsOptions.Offers}
               label={<FormattedMessage id="offers" defaultMessage="Offers" />}
-            />
+            /> */}
           </Tabs>
         </Grid>
         <Grid item xs={12}>

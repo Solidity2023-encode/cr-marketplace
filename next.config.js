@@ -11,6 +11,7 @@ module.exports = {
       'arpeggi.io',
       'arweave.net',
       'metadata.ens.domains',
+      'dexkit-storage.nyc3.digitaloceanspaces.com',
     ],
   },
 };

@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Grid, styled } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -10,6 +10,7 @@ interface Props {
   title: React.ReactNode | React.ReactNode[];
   items: SectionItem[];
 }
+const LogoImage = styled('img')({});
 
 export function FeaturedSection({ title, items }: Props) {
   const renderItems = () => {
@@ -39,13 +40,17 @@ export function FeaturedSection({ title, items }: Props) {
   };
 
   return (
-    <Box bgcolor="#111" color="#fff" py={8}>
+    <Box color="#f5c89e" py={8}>
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Typography align="center" variant="h3" component="h1">
+            <LogoImage
+              src="/assets/images/market-logo-big.svg"
+              sx={{ height: 100, width: '100%' }}
+            />
+            {/* <Typography align="center" variant="h3" component="h1">
               {title}
-            </Typography>
+            </Typography> */}
           </Grid>
           {renderItems()}
         </Grid>

@@ -6,7 +6,7 @@ import { useQuery } from 'react-query';
 import {
   COINGECKO_ENDPOIT,
   COINGECKO_PLATFORM_ID,
-  ZEROEX_NATIVE_TOKEN_ADDRESS
+  ZEROEX_NATIVE_TOKEN_ADDRESS,
 } from '../constants';
 import { NETWORKS } from '../constants/chain';
 import { getCoinPrices, getTokenPrices } from '../services/currency';
@@ -27,6 +27,7 @@ export const useCoinPricesQuery = ({
   const { provider, chainId } = useWeb3React();
   const tokens = useTokenList({ chainId });
   const currency = useCurrency();
+
   return useQuery(
     [GET_COIN_PRICES, chainId, tokens, currency],
     async () => {
@@ -41,6 +42,9 @@ export const useCoinPricesQuery = ({
 
       if (includeNative) {
         const activeNetwork = NETWORKS[chainId];
+        console.log(activeNetwork);
+        // Test
+
         if (activeNetwork && activeNetwork.coingeckoId) {
           const nativePrice = await getCoinPrices({
             coingeckoIds: [activeNetwork.coingeckoId],
